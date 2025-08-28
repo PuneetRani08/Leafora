@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Shop - Leafora</title>
+  <link rel="stylesheet" href="plants.css">
+  <script src="plants.js" defer></script>
+
+  <!-- ✅ Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 Leafora Shop</h1>
+    <nav>
+      <!-- You can add links like Home, Shop, Categories here -->
+    </nav>
+
+    <!-- ✅ Header Icons -->
+    <div class="header-icons">
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+      </div>
+      <a href="cart.html" class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ✅ Product List -->
+  <div class="container" id="product-list"></div>
+
+  <!-- ✅ Product Modal -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <img id="modalImg" src="" alt="Product Image">
+      <h2 id="modalName"></h2>
+      <p id="modalPrice"></p>
+      <p id="modalRating"></p>
+      <p id="modalDesc"></p>
+      <button id="addToCart" class="btn">Add to Cart</button>
+    </div>
+  </div>
+
+</body>
+</html>
